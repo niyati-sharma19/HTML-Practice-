@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niyati Sharma | Portfolio</title>
+    <style>
+        /* --- Reset & Base Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 3rem 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #38bdf8;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .tagline {
+            color: #cbd5e1;
+            font-style: italic;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        /* --- Button Navigation Layout --- */
+        nav {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        /* --- Button Format Headings --- */
+        .nav-btn {
+            background: transparent;
+            border: 2px solid #38bdf8;
+            color: #38bdf8;
+            padding: 0.75rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.1);
+        }
+
+        .nav-btn:hover, .nav-btn.active {
+            background-color: #38bdf8;
+            color: #0f172a;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* --- Content Container & Sections --- */
+        .content-container {
+            width: 100%;
+            max-width: 800px;
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid #334155;
+        }
+
+        .page-section {
+            display: none; /* Hidden by default */
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .page-section.active {
+            display: block; /* Shown when active */
+        }
+
+        /* --- Content Styling --- */
+        h2 {
+            font-size: 1.8rem;
+            color: #f1f5f9;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 0.5rem;
+        }
+
+        .item {
+            margin-bottom: 2.5rem;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #38bdf8;
+        }
+
+        .item-sub {
+            font-style: italic;
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-date {
+            font-size: 0.95rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        p, ul {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-left: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-badge {
+            display: inline-block;
+            background: #334155;
+            color: #38bdf8;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-top: 0.75rem;
+            margin-right: 0.5rem;
+            font-weight: 500;
+        }
+
+        /* --- Smooth Fade-in Animation --- */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Niyati Sharma</h1>
+        <div class="subtitle">Computer Science & Engineering Student</div>
+        <div class="tagline">An aspiring youth, eager to learn, adapt, and build innovative tech solutions.</div>
+        
+        <nav>
+            <button class="nav-btn active" onclick="showPage('education')">Education</button>
+            <button class="nav-btn" onclick="showPage('experience')">Experience</button>
+            <button class="nav-btn" onclick="showPage('projects')">Projects</button>
+        </nav>
+    </header>
+
+    <main class="content-container">
+
+        <section id="education" class="page-section active">
+            <h2>Education</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Bachelor of Technology (B.Tech)</span>
+                    <span class="item-date">2024 - Present</span>
+                </div>
+                <div class="item-sub">Computer Science & Engineering</div>
+                <p>Focusing on algorithmic problem solving, modern programming paradigms, and software development fundamentals. Actively building core skills in technical concepts and maintaining a strong academic focus.</p>
+                <div>
+                    <span class="tech-badge">Data Structures & Algorithms</span>
+                    <span class="tech-badge">C++</span>
+                    <span class="tech-badge">Web Development</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Class XII (Senior Secondary)</span>
+                    <span class="item-date">Completed</span>
+                </div>
+                <div class="item-sub">Guru Nanak Mission Public School, Paonta Sahib, Himachal Pradesh</div>
+                <p>Graduated with an aggregate score of <strong>88%</strong>.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Class X (Secondary School)</span>
+                    <span class="item-date">Completed</span>
+                </div>
+                <div class="item-sub">Guru Nanak Mission Public School, Paonta Sahib, Himachal Pradesh</div>
+                <p>Graduated with an aggregate score of <strong>84%</strong>.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="page-section">
+            <h2>Experience</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Web Development Trainee / Intern</span>
+                    <span class="item-date">Contract / Practical Phase</span>
+                </div>
+                <div class="item-sub">3Skills</div>
+                <ul>
+                    <li>Gained hands-on experience in the field of web development, focusing on structured frontend and backend practices.</li>
+                    <li>Learned to implement clean, responsive design systems using standard web architecture principles.</li>
+                    <li>Collaborated on real-world learning milestones to build user-centric interface features.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="page-section">
+            <h2>Projects</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Jarvis - Voice Assistance System</span>
+                    <span class="item-date">Personal Project</span>
+                </div>
+                <p>Developed an interactive voice-controlled assistant designed similarly to Siri. Built features capable of processing vocal input parameters to execute desktop utilities, run system configurations, and retrieve fast web information interfaces seamlessly.</p>
+                <div>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Speech Recognition</span>
+                    <span class="tech-badge">Automation</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Surprise Housing - Market Value Prediction</span>
+                    <span class="item-date">Data Science Project</span>
+                </div>
+                <p>Engineered an explicit data analysis model tracking variable property attributes. Developed mathematical and regression analytics frameworks to forecast valuation trajectories for business optimization strategies.</p>
+                <div>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Data Analysis</span>
+                    <span class="tech-badge">Predictive Modeling</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function showPage(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Deactivate all buttons
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Show target section
+            document.getElementById(sectionId).classList.add('active');
+
+            // Find clicked button and highlight it
+            const clickedButton = Array.from(buttons).find(btn => 
+                btn.getAttribute('onclick').includes(sectionId)
+            );
+            if (clickedButton) {
+                clickedButton.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>

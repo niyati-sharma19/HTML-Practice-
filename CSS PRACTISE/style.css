@@ -1,0 +1,26 @@
+h1{
+   background-color: pink; 
+}
+h2{
+   background-color:aqua;
+}
+/* font */ 
+h1{
+   font-size: 80px;
+
+}
+ol{
+   font-size: 20px;
+}
+li{
+   font-size: 2em;
+}
+html{
+   font-size: 40px;
+}
+/* h1{
+   font-size: 2rm;
+} */
+ h2{
+   font-size: 2vw;
+ }

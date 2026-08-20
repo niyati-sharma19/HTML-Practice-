@@ -1,0 +1,36 @@
+.container{
+    background-color: aqua;
+    display: flex ;
+    height: 400px;
+   /* justify-content:space-evenly;*/
+    align-items: center;
+    /*alignitems work around cross axis*/
+     /* flex-wrap: wrap ; */
+
+
+}
+.box{
+    height:100px;
+    width:100px;
+    margin:5px;
+}
+.first{
+    background-color:orange;
+    /* flex-grow: 1; */
+    /* it gives the first container enough space to extend itself from the remaining spaces left */
+    flex-basis:200px;
+    /* the more priority will be given to flex basis widht (this attribute overrides)it changes the width of first inline block element  on the main axis */
+}
+.Second{
+    background-color: green;
+    /* flex-shrink: 4; */
+    /* When we shrink the webpage then we will observe that
+    the second inline block will shrink 4 times faster than anyother inline block element */
+}
+.Third{
+    background-color: blue;
+}
+.Fourth{
+    background-color: brown;
+    align-self: flex-start;
+}
