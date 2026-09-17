@@ -1,0 +1,29 @@
+#heading {
+    color: blue;
+    text-decoration: line-through;
+    font-weight: bold;
+    background-color: rgb(255, 225, 0);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body {
+    background-color: pink;
+    color: rgb(29, 29, 29);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+button {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555555;
+}
