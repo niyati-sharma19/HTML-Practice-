@@ -35,3 +35,15 @@ let div= document.querySelecctor("div");
 div.onmouseover = () =>{
 console.log(" you are inside div");
 } ;
+let modeBtn = document.querySelector("#mode");
+let currentMode = "Light" ; 
+modeBtn.addEventListener("click" ,() => {
+   if(currentMode == "Light"){
+    currentMode = "Dark " ;
+
+   }
+   else {
+    currentMode = "Light";
+   }
+   console.log(currentMode);
+});
