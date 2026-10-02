@@ -1,0 +1,12 @@
+Sync in JS
+Synchronous => 
+    it means the code runs in a particular sequence of instructions given in the PerformanceNavigationTiming.
+Each instruction waits for the previous instruction to complete its execution .
+Asynchronous =>
+     due to sync programming,sometimes imp instructions get blocked due to some previous instructions,
+which causes a delay in the UI .Asynchronous code execution allows to execute next instructions immediately and doesnot block the flow.
+
+Callbacks =>
+     A callback is a function passed as an arguement to another function.
+Callback Hell =>
+    A nested callbacks stacked below one another forming a pyramid.
