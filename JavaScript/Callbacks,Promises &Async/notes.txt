@@ -10,3 +10,16 @@ Callbacks =>
      A callback is a function passed as an arguement to another function.
 Callback Hell =>
     A nested callbacks stacked below one another forming a pyramid.
+
+PROMISES => To solve a part of callback Hell , promises are created
+  It is for "eventual" completion of task .It is an object in JS.
+  It is a solution to callback Hell .
+  let Promise = new Promise((resolve , reject ) => {...})  >>> Function with 2 handlers
+  *resolve & reject are callbacks provided by JS.
+  
+  PENDING : the result is undefined 
+  RESOLVED : the result is a value (fulfilled)   resolve(result)
+  REJECTED :the result is an error object     reject(error)
+   .then() & .catch()
+   promise.then((res) => {...})
+   promise.catch((err) => {..})

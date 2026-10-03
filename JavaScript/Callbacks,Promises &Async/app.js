@@ -17,3 +17,19 @@ function calculator( a , b , sumcallback){
      sumcallback(a,b);
 }
 calculator(1,2,sum);
+function getData(dataId , getNextData)
+{
+    setTimeout(() => {
+        console.log("data" , dataId);
+       if( getNextData){
+        getNextData() ;
+
+       }
+    },2000);
+}
+//Callback hell 
+getData(1 , () => {// this is callback function which is wriiten in this format so that it won't execute immediately 
+        getData(2,() => {
+            getData(3);
+        })
+});
