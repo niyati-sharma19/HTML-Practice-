@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet" href = style.css/>
+   <link  rel = "stylesheet"
+    href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css "
+    />
 </head>
 <body>
     <div class ="container">
@@ -17,17 +21,29 @@
                 <div class="from">
                     <p>From</p>
                     <div class="select-container">
+                        <img src ="https://flagsapi.com/USD/flat/64.png">
                         <select name ="from">
                             <option>USD</option>
                             <option>EUR</option>
-                            <option>JPY</option>
-                            <option> AUD</option>
                             <option>INR </option>
                         </select>
                     </div>
                 </div>
+                <div class = "to" >
+                 <p>To</p>
+                    <div class="select-container">
+                        <img src ="https://flagsapi.com/IN/flat/64.png">
+                        <select name ="to">
+                            <option>USD</option>
+                            <option>EUR</option>
+                            <option>INR  selected</option>
+                        </select>
+                    </div>    
+                </div>
 
             </div>
+            <div class="msg"> 1USD = 80 INR</div>
+            <button>Get Exchange Rate</button>
         </form>
 
     </div>
