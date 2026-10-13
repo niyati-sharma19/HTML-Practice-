@@ -1,0 +1,19 @@
+*{
+    margin : 0 ;
+    padding : 0 ;
+
+
+}
+body {
+    display :flex ;
+    justify-content :center ;
+    align-items:center;
+    min-height:100vh;
+    background-color:beige;
+}
+.container {
+    background-color: aliceblue;
+    padding :2em ;
+    border-radius :1rem ;
+
+}
